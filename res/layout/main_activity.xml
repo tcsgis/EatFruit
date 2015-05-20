@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/window"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/wl_title1" />
+
+    <RelativeLayout
+        android:id="@+id/rl_null_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:background="@color/welcom_back"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:gravity="left"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/welcom_txt"
+            android:textColor="@color/welcom_text"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:id="@+id/welcome_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title"
+            android:layout_marginTop="40dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/wl_welcome" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#D6EBDC" >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/apple_zhou_back" />
+
+            <TextView
+                android:id="@+id/txt_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="35dp"
+                android:text="@string/shui_guo_lan_1"
+                android:textColor="@color/txt_green"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/txt_1"
+                android:layout_below="@id/txt_1"
+                android:layout_marginTop="54dp"
+                android:gravity="left"
+                android:text="@string/shui_guo_lan_2"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/shui_guo_lan_3"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line2" />
+
+        <com.aaa.other.AnniSwipeListView
+            android:id="@+id/list_fruit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent" >
+        </com.aaa.other.AnniSwipeListView>
+    </LinearLayout>
+
+</RelativeLayout>

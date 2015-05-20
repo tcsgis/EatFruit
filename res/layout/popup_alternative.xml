@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:id="@+id/rela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_corner_white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rela_popup_alt_line1"
+            android:layout_width="match_parent"
+            android:layout_height="78dp" >
+
+            <TextView
+                android:id="@+id/txt_popup_alt_line1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/alt_back"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/rela_popup_alt_line1"
+            android:background="@color/popup_line" />
+
+        <RelativeLayout
+            android:id="@+id/rela_popup_alt_line2"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:layout_below="@id/divider"
+            android:background="@color/popup_back" >
+
+            <TextView
+                android:id="@+id/txt_popup_alt_line2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/alt_back"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/rela_popup_alt_line2"
+            android:background="@color/popup_line" />
+
+        <RelativeLayout
+            android:id="@+id/rela_popup_alt_line3"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:layout_below="@id/divider2"
+            android:background="@color/popup_back" >
+
+            <TextView
+                android:id="@+id/txt_popup_alt_line3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/alt_back"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/rela"
+        android:background="@color/popup_line" />
+
+    <Button
+        android:id="@+id/btn_popup_alt_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_below="@id/divider3"
+        android:background="@drawable/alt_back"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>
